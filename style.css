@@ -2254,3 +2254,46 @@ ol.filed-list .pat-item::before {
         font-size: 0.85rem;
     }
 }
+/* ================================================= */
+/* --- GLOBAL MOBILE RESPONSIVENESS SAFETY NET --- */
+/* ================================================= */
+
+/* 1. Stop images from stretching past the screen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Prevent horizontal scrolling on phones */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* 3. Mobile formatting rules */
+@media (max-width: 768px) {
+    
+    /* Ensure containers have breathing room on the edges */
+    section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Make all standard buttons larger and easier to tap */
+    a.button, button, .pi-btn, .pi-modern-btn {
+        min-height: 44px; /* Minimum tappable height */
+        padding: 12px 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%; /* Makes main buttons span the screen width on phones */
+        margin-bottom: 10px;
+    }
+    
+    /* Keep the bacteria button small but perfectly tappable */
+    .bacteria-back-btn {
+        min-height: 44px;
+        width: auto; 
+    }
+}
