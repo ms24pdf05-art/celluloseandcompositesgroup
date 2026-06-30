@@ -481,6 +481,21 @@ footer a {
     }
 }
 
+/* Update .logo-text to match YOUR actual class name */
+.logo-text {
+    font-size: 1.8rem; /* Increase this number (e.g., 2.0rem, 2.2rem) to make it bigger */
+    font-weight: 700;  /* Makes the text nice and bold */
+    color: #003366;    /* Ensures it matches your IIT Blue theme */
+    margin-left: 10px; /* Gives a little breathing room between the image and the text */
+}
+
+/* Mobile Responsiveness: Scale it down slightly for phones */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1.2rem; /* Keeps it from breaking to a second line on small screens */
+    }
+}
+
 /* Card Styling */
 .member-card {
     cursor: pointer;
