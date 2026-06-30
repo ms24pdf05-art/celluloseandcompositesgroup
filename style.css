@@ -467,11 +467,18 @@ footer a {
 
 /* --- The Actual Logo Image --- */
 .logo-img {
-    height: 75px;          /* Adjust this number to make your logo bigger or smaller! */
+    height: 90px;          /* Adjust this number to make your logo bigger or smaller! */
     width: auto;           /* Keeps the logo from stretching out of shape */
     border-radius: 50%;    /* TIP: Set this to '50%' if your logo is a circle, or '5px' for a soft square */
     background: #ffffff;   /* Optional: Puts a white circle/box behind the logo in case it's hard to see against the blue header */
     padding: 3px;          /* Gives a little breathing room if you keep the white background */
+}
+
+/* Let's keep it from getting too massive on mobile phones */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 50px; /* A slightly smaller size for mobile screens */
+    }
 }
 
 /* Card Styling */
