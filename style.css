@@ -2730,3 +2730,38 @@ header {
 .nav-links li a:hover {
     color: #065c17; /* IIT Green hover effect */
 }
+
+/* ================================================= */
+/* --- ACADEMIC COURSEWORK HEADER BACKGROUND --- */
+/* ================================================= */
+
+.coursework-header-bg {
+    /* The first part is the semi-transparent IIT Blue overlay (0.8 = 80% opacity). 
+       The second part is the path to your background image. */
+    background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('images/teaching-hero.jpeg');
+    
+    background-size: cover;          /* Ensures the image fills the entire space */
+    background-position: center;     /* Keeps the focal point in the middle */
+    background-repeat: no-repeat;
+    
+    padding: 80px 20px;              /* Gives the header lots of vertical breathing room */
+    text-align: center;
+    border-radius: 8px;              /* Optional: rounds the corners slightly */
+    margin-bottom: 40px;             /* Space between header and the courses */
+}
+
+/* Make sure the text inside pops against the dark background */
+.coursework-header-bg h2 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.coursework-header-bg p {
+    color: #e2e8f0; /* A soft off-white for the subtitle */
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
