@@ -2738,7 +2738,7 @@ header {
 .teaching-overlay {
     /* The first part is the semi-transparent IIT Blue overlay (0.8 = 80% opacity). 
        The second part is the path to your background image. */
-    background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('images/teaching-hero.jpeg');
+    background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('celluloseandcompositesgroup/main/teaching-hero.jpeg');
     
     background-size: cover;          /* Ensures the image fills the entire space */
     background-position: center;     /* Keeps the focal point in the middle */
