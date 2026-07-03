@@ -2735,7 +2735,7 @@ header {
 /* --- ACADEMIC COURSEWORK HEADER BACKGROUND --- */
 /* ================================================= */
 
-.coursework-header-bg {
+.teaching-overlay {
     /* The first part is the semi-transparent IIT Blue overlay (0.8 = 80% opacity). 
        The second part is the path to your background image. */
     background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('images/teaching-hero.jpeg');
@@ -2751,7 +2751,7 @@ header {
 }
 
 /* Make sure the text inside pops against the dark background */
-.coursework-header-bg h2 {
+.teaching-overlay h2 {
     color: #ffffff;
     font-size: 2.8rem;
     margin: 0 0 10px 0;
@@ -2759,7 +2759,7 @@ header {
     letter-spacing: 1px;
 }
 
-.coursework-header-bg p {
+.teaching-overlay p {
     color: #e2e8f0; /* A soft off-white for the subtitle */
     font-size: 1.1rem;
     max-width: 600px;
