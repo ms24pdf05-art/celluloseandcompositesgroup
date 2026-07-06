@@ -437,7 +437,7 @@ footer a {
 
 /* 1. Start the counter at your total number + 1 (71 papers = 73) */
 #publications {
-    counter-reset: pub-counter 74; 
+    counter-reset: pub-counter 75; 
 }
 
 /* 2. Tell the website to count DOWN by 1 for every paper */
