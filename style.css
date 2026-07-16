@@ -2669,13 +2669,13 @@ header {
     width: 100%;
 }
 
+/* Ensures the video and the links sit perfectly together in the header */
 .nav-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Vertically centers the logo and links */
-    padding: 10px 20px;
-    max-width: 100%; /* Lets the header span the full screen to fit links */
-    margin: 0 auto;
+    justify-content: space-between; /* Puts logo on the left, links on the right */
+    align-items: center;            /* Centers everything vertically */
+    padding: 10px 30px;             /* Gives the header breathing room */
+    background-color: #ffffff;      /* Ensures your header is pure white */
 }
 
 
@@ -2775,11 +2775,22 @@ header {
 }
 
 /* Sizing and blending the logo video */
+/* ================================================= */
+/* --- LOGO VIDEO SEAMLESS BLEND --- */
+/* ================================================= */
+
 .nav-logo-video {
-    width: 280px;        /* This makes it wide enough to read the text */
-    height: auto;        /* Keeps the video from getting stretched/distorted */
+    width: 280px; 
+    height: auto;
     object-fit: contain;
     
-    /* This magically hides the video's background so it merges with the white header! */
+    /* 1. The Blend Mode */
     mix-blend-mode: multiply; 
+    
+    /* 2. The Filter Magic: Blows out the gray background to pure white */
+    /* You can tweak these numbers slightly (e.g., 1.15) if you still see a faint box */
+    filter: brightness(1.1) contrast(1.2); 
+    
+    /* Prevents the video from adding extra space below itself */
+    display: block;
 }
