@@ -2765,3 +2765,24 @@ header {
     max-width: 600px;
     margin: 0 auto;
 }
+
+/* ================================================= */
+/* --- HEADER ANIMATED LOGO --- */
+/* ================================================= */
+
+.header-logo-video {
+    height: 65px; /* Keeps the video small enough to fit the header */
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Blends the video's background with the header */
+}
+
+/* Ensure the nav-logo wrapper keeps the video and text side-by-side */
+.nav-logo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    text-decoration: none;
+    flex-shrink: 0;
+    gap: 12px; 
+}
