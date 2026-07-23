@@ -2533,8 +2533,8 @@ html, body {
         gap: 30px;
     }
 }
-1.7.2026 
-/* Elegant anchored caption bar updated for the advantages aesthetic */
+/*1.7.2026 
+ Elegant anchored caption bar updated for the advantages aesthetic */
 .image-caption {
     background-color: #065c17; /* Switched to IIT Green to highlight "Advantages" */
     color: #ffffff;
@@ -2822,28 +2822,14 @@ header {
     align-items: center;
     text-decoration: none;
     flex-shrink: 0;
-}
-
-/* Sizing and blending the logo video */
-/* ================================================= */
-/* --- LOGO VIDEO SEAMLESS BLEND --- */
-/* ================================================= */
-
-.nav-logo-video {
-    width: 280px; 
-    height: auto;
+    height: 95px; /* Change this number to make it as big as you want! */
+    max-height: 100px; /* Limits it just enough so it doesn't break your header */
+    width: auto;
     object-fit: contain;
-    
-    /* 1. The Blend Mode */
-    mix-blend-mode: multiply; 
-    
-    /* 2. The Filter Magic: Blows out the gray background to pure white */
-    /* You can tweak these numbers slightly (e.g., 1.15) if you still see a faint box */
-    filter: brightness(1.1) contrast(1.2); 
-    
-    /* Prevents the video from adding extra space below itself */
-    display: block;
 }
+
+
+
 /* ================================================= */
 /* --- WEBSITE CREDITS (FOOTER) --- */
 /* ================================================= */
