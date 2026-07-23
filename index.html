@@ -12,14 +12,19 @@
 <header>
     <div class="nav-container">
         
-        <a href="index.html" class="nav-logo">
-            <video autoplay loop muted playsinline class="nav-logo-video">
-                <source src="logo-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </a>
+        <!-- 1. LEFT: Static Lab Logo -->
+        <div class="logo-left">
+            <a href="index.html" class="nav-logo">
+                <!-- ⚠️ Change 'logo.png' to your actual image file name -->
+                <img src="Logo.jpg" alt="Cellulose & Composite Group Logo" class="header-logo">
+                
+                <!-- I included the text span just in case your static image doesn't have the text built-in! Delete this span if you don't need it. -->
+                <span class="logo-text">Cellulose & Composite Group</span> 
+            </a>
+        </div>
         
-        <nav>
+        <!-- 2. CENTER: Navigation Links -->
+        <nav class="nav-center">
             <ul class="nav-links">
                 <li><a href="#new-to-bc">New to BC?</a></li>
                 <li><a href="#research">Research</a></li>
@@ -33,6 +38,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- 3. RIGHT: IITH Logo -->
+        <div class="logo-right">
+            <a href="https://iith.ac.in/" target="_blank">
+                <!-- ⚠️ Change 'iith-logo.png' to your actual IITH image file name -->
+                <img src="iith.png" alt="IITH Logo" class="iith-logo">
+            </a>
+        </div>
 
     </div>
 </header>
@@ -3020,6 +3033,12 @@
             <p>Location: Indian Institute of Technology Hyderabad</p>
             <p>&copy; 2026 Cellulose and Composite Group. All rights reserved.</p>
         </div>
+      <!-- ========================================== -->
+<!-- WEBSITE CREDITS -->
+<!-- ========================================== -->
+<div class="website-credits">
+    <p>Website Weavers: <strong>Jiji, Sukesh and Sukriti</strong></p>
+</div>
     </footer>
 
 <script>
