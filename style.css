@@ -2742,7 +2742,13 @@ header {
 /* ================================================= */
 
 /* Ensures both logos have a uniform height so the header doesn't look lopsided */
-.header-logo, .iith-logo {
+.header-logo {
+    height: 80px; /* Adjust this up or down to dial in the perfect size */
+    width: auto;
+    object-fit: contain;
+}
+
+.iith-logo {
     height: 65px; /* Adjust this up or down to dial in the perfect size */
     width: auto;
     object-fit: contain;
@@ -2822,10 +2828,7 @@ header {
     align-items: center;
     text-decoration: none;
     flex-shrink: 0;
-    height: 95px; /* Change this number to make it as big as you want! */
-    max-height: 100px; /* Limits it just enough so it doesn't break your header */
-    width: auto;
-    object-fit: contain;
+   
 }
 
 
