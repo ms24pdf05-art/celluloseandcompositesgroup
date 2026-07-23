@@ -2850,8 +2850,8 @@ header {
     padding: 20px;
     margin-top: 40px; /* Creates breathing room between your main footer and the credits */
     border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adds a very faint separating line */
-    font-size: 14px;
-    color: #666666; /* A soft, professional grey */
+    font-size: 18px;
+    color: #ffffff; /* white */
 }
 
 /* Makes your names stand out just a little bit more */
