@@ -2680,14 +2680,7 @@ header {
 
 
 /* --- LOGO ALIGNMENT (SIDE-BY-SIDE) ---  02/07/2026 */
-.nav-logo {
-    display: flex;
-    flex-direction: row; /* Forces the image and text side by side */
-    align-items: center; /* Vertically centers the text with the logo */
-    text-decoration: none;
-    flex-shrink: 0;
-    gap: 12px; /* Adds nice horizontal breathing room between the image and text */
-}
+
 
 .logo-img {
     height: 80px; 
@@ -2704,7 +2697,61 @@ header {
 }
 
 
+ /* ================================================= */
+/* --- 3-COLUMN HEADER LAYOUT --- 23/07/2026 */
+/* ================================================= */
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+/* These flex settings ensure the side logos push the navigation perfectly into the center */
+.logo-left, .logo-right {
+    flex: 1; 
+}
+
+/* Align the left logo to the far left */
+.logo-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Center the navigation menu */
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex: 2; /* Gives the navigation links a bit more room to stretch out */
+}
+
+/* Align the right IITH logo to the far right */
+.logo-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ================================================= */
+/* --- LOGO IMAGE SIZING --- */
+/* ================================================= */
+
+/* Ensures both logos have a uniform height so the header doesn't look lopsided */
+.header-logo, .iith-logo {
+    height: 65px; /* Adjust this up or down to dial in the perfect size */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Keeps the left logo and text nicely paired if you use the text span */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
 
 
 /* --- NAVIGATION LINKS --- */
@@ -2793,4 +2840,22 @@ header {
     
     /* Prevents the video from adding extra space below itself */
     display: block;
+}
+/* ================================================= */
+/* --- WEBSITE CREDITS (FOOTER) --- */
+/* ================================================= */
+
+.website-credits {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Creates breathing room between your main footer and the credits */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adds a very faint separating line */
+    font-size: 14px;
+    color: #666666; /* A soft, professional grey */
+}
+
+/* Makes your names stand out just a little bit more */
+.website-credits strong {
+    color: #333333; 
+    font-weight: 600;
 }
