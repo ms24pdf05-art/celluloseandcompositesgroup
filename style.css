@@ -2672,18 +2672,21 @@ header {
 /* Ensures the video and the links sit perfectly together in the header */
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Puts logo on the left, links on the right */
-    align-items: center;            /* Centers everything vertically */
-    padding: 10px 30px;             /* Gives the header breathing room */
-    background-color: #ffffff;      /* Ensures your header is pure white */
+    justify-content: space-between;
+    align-items: center;
+    
+    /* 👇 Changed the 10px to 0px so the logo can expand fully to the top and bottom */
+    padding: 0px 30px; 
+    
+    background-color: #ffffff;
+    max-width: 100%;
 }
-
 
 /* --- LOGO ALIGNMENT (SIDE-BY-SIDE) ---  02/07/2026 */
 
 
 .logo-img {
-    height: 90px; 
+    height: 110px; 
     width: auto;
     object-fit: contain;
 }
